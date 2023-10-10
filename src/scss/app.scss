@@ -1,3 +1,16 @@
-h1 {
-  font-size: 32px;
-}
+@import "variables";
+@import "utils";
+@import "general";
+@import "atomic";
+@import "./components/btn";
+@import "./components/card";
+@import "./components/form";
+@import "./components/news";
+@import "./components/icon";
+@import "./components/track";
+@import "./components/albom";
+@import "./components/artist";
+@import "header";
+@import "footer";
+@import "./pages/home";
+@import "./pages/artist";

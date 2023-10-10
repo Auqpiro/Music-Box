@@ -1,0 +1,129 @@
+/* box-model */
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.fd-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.fd-column {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+/* position */
+
+.p-relative {
+  position: relative;
+}
+
+.pt-40 {
+  padding-top: px-to-rem(40px);
+}
+
+.pt-43 {
+  padding-top: px-to-rem(43px);
+}
+
+.pt-100 {
+  padding-top: px-to-rem(100px);
+}
+
+.pb-100 {
+  padding-bottom: px-to-rem(100px);
+}
+
+.pb-24 {
+  padding-bottom: px-to-rem(24px);
+}
+
+.pb-30 {
+  padding-bottom: px-to-rem(30px);
+}
+
+.pb-50 {
+  padding-bottom: px-to-rem(50px);
+}
+
+.pb-48 {
+  padding-bottom: px-to-rem(48px);
+}
+
+.pb-46 {
+  padding-bottom: px-to-rem(46px);
+}
+
+.pb-43 {
+  padding-bottom: px-to-rem(43px);
+}
+
+.m-a {
+  margin: auto;
+}
+
+/* style */
+.color-white {
+  color: $white;
+}
+
+.color-dark-gray {
+  color: $dark-gray;
+}
+
+.color-orange {
+  color: $orange;
+}
+
+.sr-only {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+}
+
+/* typography */
+.text-center {
+  text-align: center;
+}
+
+.to-uppercase {
+  text-transform: uppercase;
+}

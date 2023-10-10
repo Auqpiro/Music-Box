@@ -1,0 +1,206 @@
+.home-page-description {
+  padding: px-to-rem(200px) 0;
+
+  @include set-bg-image(banner, png);
+
+  @include set-media(sm) {
+    padding: px-to-rem(247px) 0 px-to-rem(200px) 0;
+  }
+
+  p {
+    margin-top: px-to-rem(33px);
+
+    @include set-typography(16px, 24px, normal);
+
+    @include set-media(sm) {
+      margin-top: px-to-rem(16px);
+    }
+  }
+
+  &-btn {
+    flex: 1 1 px-to-rem(570px);
+    max-width: px-to-rem(570px);
+    min-height: px-to-rem(60px);
+    margin: 0;
+
+    @include set-typography(13.3px, 15.29px, normal, uppercase);
+    padding: px-to-rem(20px) px-to-rem(30px);
+  }
+}
+
+.page-pricing {
+  .box {
+    @include set-box(50px, 0, 366px);
+
+    @include set-media(sm) {
+      @include set-box(0, 50px, 374px);
+      min-width: px-to-rem(374px);
+      justify-content: center;
+    }
+  }
+
+  .bg-free {
+    background-image: url("../images/subscribe_1.png");
+    width: 374px;
+    max-width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bg-standard {
+    background-image: url("../images/subscribe_2.png");
+    width: 374px;
+    max-width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bg-premium {
+    background-image: url("../images/subscribe_3.png");
+    width: 374px;
+    max-width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @include set-media(sm) {
+    .bg-free {
+      background-image: url("../images/Free-Bg.png");
+      width: 374px;
+      max-width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .bg-standard {
+      background-image: url("../images/Standart-Bg.png");
+      width: 374px;
+      max-width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .bg-premium {
+      background-image: url("../images/Premium-Bg.png");
+      width: 374px;
+      max-width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  h2 {
+    margin-bottom: px-to-rem(48px);
+  }
+
+  .bottom-describtion {
+    padding-top: px-to-rem(42px);
+  }
+
+  // @include set-card-bg();
+
+  // @include set-media(md) {
+  //   @include set-card-bg();
+  // }
+
+  &-btn {
+    flex: 1 1 px-to-rem(326px);
+    max-width: px-to-rem(326px);
+    min-height: px-to-rem(66px);
+
+    margin: px-to-rem(40px) 0 0 0;
+
+    background: transparent;
+    border: px-to-rem(1px) solid $white;
+
+    @include set-typography(16px, 24px, normal, uppercase);
+  }
+}
+
+.page-news {
+  p {
+    color: $dark-gray;
+  }
+
+  .flex-container {
+    flex: 1 1 575px;
+    justify-content: space-between;
+
+    & > * {
+      max-width: 575px;
+    }
+  }
+
+  & > article:not(:last-child) {
+    margin-bottom: px-to-rem(65px);
+  }
+
+  .news-image {
+    width: 100%;
+    height: px-to-rem(286px);
+
+    @include set-media(sm) {
+      height: px-to-rem(186px);
+    }
+  }
+
+  &-btn {
+    max-width: px-to-rem(135px);
+    min-height: px-to-rem(53px);
+    margin: 0;
+    padding: 0 px-to-rem(30px);
+
+    @include set-typography(12px, 19px, normal, uppercase);
+    color: $dark-gray;
+
+    background: transparent;
+    border: px-to-rem(1px) solid $dark-gray;
+  }
+
+  .news-body-special-margin {
+    margin-top: px-to-rem(16px);
+
+    @include set-media(sm) {
+      margin-top: px-to-rem(16px);
+    }
+  }
+}
+
+.mobile {
+  .box {
+    @include set-box(20px, 0, 600px);
+
+    @include set-media(md) {
+      flex-wrap: wrap-reverse;
+    }
+  }
+
+  p {
+    @include set-typography(16px, 24px);
+    color: $dark-gray;
+    padding-top: 1rem;
+  }
+
+  &-btn {
+    @include set-typography(12.8px, 19.2px);
+    padding: px-to-rem(16px 40px);
+    border-radius: px-to-rem(32px);
+    margin-top: 1rem;
+  }
+
+  img {
+    height: px-to-rem(278px);
+  }
+}

@@ -1,0 +1,83 @@
+$header-placeholder: #757575;
+
+.header {
+  position: absolute;
+  top: px-to-rem(25px);
+  right: 0;
+  left: 0;
+
+  .nav-menu ul > * {
+    margin-left: px-to-rem(24px);
+  }
+
+  .nav-menu a {
+    &:hover {
+      color: #fff;
+
+      cursor: pointer;
+    }
+
+    &:active {
+      color: #fff;
+    }
+  }
+
+  @include set-typography(11px, 16px, 400, uppercase);
+
+  .logo {
+    margin-right: px-to-rem(66px);
+
+    &-image {
+      width: px-to-rem(24px);
+      margin-right: px-to-rem(16px);
+    }
+
+    &-title {
+      padding: 0;
+    }
+  }
+
+  .search-input {
+    min-width: px-to-rem(248px);
+    min-height: px-to-rem(25px);
+    margin: 0 0 0 auto;
+
+    padding: px-to-rem(5px) px-to-rem(10px);
+
+    color: $white;
+
+    background: $dark;
+    border: none;
+    border-radius: px-to-rem(50px);
+  }
+
+  .search-input::placeholder {
+    color: $header-placeholder;
+
+    @include set-typography(13.3px, 15px, 400, uppercase);
+  }
+
+  @include set-media(sm) {
+    & .nav-menu ul {
+      flex-direction: column;
+
+      li {
+        margin-left: 0;
+      }
+    }
+  }
+
+  @include set-media(md) {
+    & > * {
+      flex: 1 1 100%;
+    }
+
+    .logo {
+      margin-bottom: px-to-rem(16px);
+    }
+
+    .nav-menu {
+      margin-bottom: px-to-rem(18px);
+    }
+  }
+}
