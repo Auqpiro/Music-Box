@@ -9,4 +9,4 @@ Layout page based on [Figma maket](https://www.figma.com/file/b6AjhwQsQeSeoIteen
 
 This project is a part of [Layout Designer](https://ru.hexlet.io/professions/layout-designer) course by [Hexlet](https://ru.hexlet.io/).
 
-You can see the result of the work [here](https://www.404.org).
+You can see the result of the work [here](https://musicbox-landingpage.surge.sh/).
